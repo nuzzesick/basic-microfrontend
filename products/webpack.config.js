@@ -11,10 +11,10 @@ module.exports = {
       template: "./public/index.html"
     }), 
     new ModuleFederationPlugin({
-      name: 'products',
-      filename: 'remoteEntry.js',
+      name: "products",
+      filename: "remoteEntry.js",
       exposes: {
-        './ProductsIndex': './src/index',
+        "./index": "./src/index"
       }
     })
   ]
